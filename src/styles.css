@@ -1,0 +1,47 @@
+:root {
+  color-scheme: dark;
+  font-family: "Didot", "Bodoni MT", "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #020203; }
+
+.screen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.copy {
+  position: absolute;
+  top: 26%;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 220, 168, 0);
+  transition: color 1.4s ease;
+  letter-spacing: 0.2em;
+}
+.copy.show { color: rgba(255, 220, 168, 0.95); }
+.copy h1 { margin: 0; font-size: clamp(2.6rem, 7vw, 7rem); font-weight: 500; }
+.copy h2 { margin: .65rem 0; font-size: clamp(.9rem, 2.2vw, 2rem); font-weight: 400; }
+.copy p { margin: 0; font-size: clamp(.85rem, 1.5vw, 1.25rem); letter-spacing: .09em; }
+
+.hint {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 235, 200, 0.8);
+  font-size: clamp(.75rem, 1.2vw, 1rem);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
